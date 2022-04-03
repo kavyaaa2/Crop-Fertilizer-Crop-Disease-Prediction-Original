@@ -1,6 +1,25 @@
 {% extends 'layout.html' %}
 {% block body %}
 <!-- banner -->
+<style>
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+</style>
 <section class = "banner_w3lspvt" id = "home">
 	<div class = "csslider infinity" id = "slider1">
 		<div class = "banner-top">
@@ -8,11 +27,11 @@
 				<div class = "container">
 					<div class = "w3layouts-banner-info text-center">
 						<br><br>
-						<h3 class = "text-wh" style="font-family: 'Philosopher', sans-serif;">WELCOME</h3>
-						<h4 class = "text-wh mx-auto my-4"><b>Get informed decisions about your farming strategy.</b></h4>
+						<h3 class = "text-wh" style="font-family: 'Philosopher', sans-serif; animation: 2s anim-lineUp ease-out; text-shadow: 4px 4px 8px #000000;">WELCOME</h3>
+						<h4 class = "text-wh mx-auto my-4" style="animation: 4s anim-lineUp ease-out;"><b>Get informed decisions about your farming strategy.</b></h4>
 						<br>
-						<h4 class = "text-wh mx-auto my-4"><strong> Here are some questions we'll answer</strong></h4>
-						<p class = "text-li mx-auto mt-2">
+						<h4 class = "text-wh mx-auto my-4"  style="animation: 6s anim-lineUp ease-out;"><strong> Here are some questions we'll answer</strong></h4>
+						<p class = "text-li mx-auto mt-2" style="animation: 6s anim-lineUp ease-out;">
 							1. What crop to plant here? <br>
 							2. What fertilizer to use? <br>
 							3. Which disease do your crop have?<br>
@@ -26,23 +45,23 @@
 <!-- //banner -->
 
 <!-- core values -->
-<section class = "core-value py-5" style = "background-image: linear-gradient(120deg, #337a28, white);">
-	<div class = "container py-md-4">
-		<h3 class = "heading mb-sm-5 mb-4 text-center" style="font-family: 'Philosopher', sans-serif;"> ABOUT US</h3>
-		<div class = "row core-grids">
-			<div class = "col-lg-6 core-left">
-				<img src = "{{ url_for('static', filename = 'images/core.jpg') }}" class = "img-fluid" style="opacity: 0.85;" alt = "" />
-			</div>
-			<div class = "col-lg-6 core-right">
-				<h3 class = "mt-4">Improving Agriculture, Improving Lives, Cultivating Crops To Make Farmers Increase
+<section class = "core-value py-5 banner-top7" >
+	<div class = "container py-md-4"  style="font-family: 'Philosopher', sans-serif;">
+		<h2 class = "heading mb-sm-5 mb-4 text-center" style="text-shadow: 2px 2px 4px #474141;font-size: 3rem;"> ABOUT US</h2>
+		
+			<div style="margin: 0 5%; padding: 2% 5%; text-align: center;background: rgba(255,255,255,0.7);">
+				<h3 class="mt-4">Improving Agriculture, Improving Lives, Cultivating Crops To Make Farmers Increase
 					Profit.</h3>
-				<p class = "mt-3">We use state-of-the-art machine learning and deep learning technologies to help you
+				<p class="mt-3" style="font-size: 20px; color: #323648;">
+				<strong>
+				    We use state-of-the-art machine learning and deep learning technologies to help you
 					guide through
 					the entire farming process. Make informed decisions to understand the demographics of your area,
 					understand the
-					factors that affect your crop and keep them healthy for a super awesome successful yield.</p>
+					factors that affect your crop and keep them healthy for a super awesome successful yield.
+				</strong>
+				</p>
 			</div>
-		</div>
 	</div>
 </section>
 <!-- //core values -->
@@ -50,7 +69,7 @@
 <!-- Products & Services -->
 <section class = "banner-top2">
 	<div class = "container py-md-5">
-		<h3 class = "heading mb-sm-5 mb-4 text-center" style="font-family: 'Philosopher', sans-serif;"> OUR SERVICES</h3>
+		<h2 class = "heading mb-sm-5 mb-4 text-center" style="font-family: 'Philosopher', sans-serif; text-shadow: 2px 2px 4px #7e7575;font-size: 3rem;"> OUR SERVICES</h2>
 		<div class = "row blog-grids">
 			<div class = "col-lg-4 col-md-6 blog-left mb-lg-0 mb-sm-5 pb-lg-0 pb-5">
 				<img src = "{{ url_for('static', filename = 'images/s3.jpg') }}" class = "img-fluid" alt = "" />
@@ -84,5 +103,60 @@
 		</div>
 	</div>
 </section>
+
+<!-- Products & Services -->
+<section class = "banner-top2">
+	<div class = "container py-md-5">
+		<h2 class = "heading mb-sm-5 mb-4 text-center" style="font-family: 'Philosopher', sans-serif; text-shadow: 2px 2px 4px #7e7575;font-size: 3rem;"> OUR SERVICES</h2>
+		<div class="row services">
+    		<div class="card mb-3" style="margin: 0.5% 10%;">
+              <div class="row no-gutters">
+                <div class="col-md-5">
+                  <img src="{{ url_for('static', filename = 'images/s3.jpg') }}" class="card-img" alt="...">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <span class="card-title">Card title</span>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card mb-3" style="margin: 0.5% 10%;">
+              <div class="row no-gutters">
+                 <div class="col-md-7">
+                      <div class="card-body">
+                        <span class="card-title">Card title</span>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                </div>
+                <div class="col-md-5">
+                  <img src="{{ url_for('static', filename = 'images/s2.jpg') }}" class="card-img" alt="...">
+                </div>
+              </div>
+            </div>
+            
+            <div class="card mb-3" style="margin: 0.5% 10%;">
+              <div class="row no-gutters">
+                <div class="col-md-5">
+                  <img src="{{ url_for('static', filename = 'images/s3.jpg') }}" class="card-img" alt="...">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <span class="card-title">Card title</span>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+		</div>
+		
+		
+		
+	</div>
+</section>
+
 </html>
 {% endblock %}

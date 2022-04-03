@@ -7826,7 +7826,7 @@ button.bg-dark:focus {
   }
   .mb-sm-5,
   .my-sm-5 {
-    margin-bottom: 3rem !important;
+    /* margin-bottom: 3rem !important; */
   }
   .ml-sm-5,
   .mx-sm-5 {
