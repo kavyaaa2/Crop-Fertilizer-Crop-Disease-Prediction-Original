@@ -390,7 +390,7 @@ li > a:only-child:after { content: ''; }
 }
 
 .banner-top2 {
-    background: url(../images/5.jpg) no-repeat center;
+    background: url(../images/farm_background_2.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -410,7 +410,7 @@ li > a:only-child:after { content: ''; }
 .banner-top4 {
 	background: url(../images/s3.jpg) no-repeat center;
     background-size: cover;
-	color: #fff;
+    padding: 20px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -418,9 +418,9 @@ li > a:only-child:after { content: ''; }
 }
 
 .banner-top5 {
-	background: url(../images/s2.jpg) no-repeat center;
+	background: url(../images/s5.jpg) no-repeat center;
     background-size: cover;
-	color: #fff;
+    padding: 20px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -428,8 +428,9 @@ li > a:only-child:after { content: ''; }
 }
 
 .banner-top6 {
-	background: url(../images/s4.jpg) no-repeat center;
+	background: url(../images/s6.jpg) no-repeat center;
     background-size: cover;
+    padding: 150px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -438,6 +439,15 @@ li > a:only-child:after { content: ''; }
 
 .banner-top7 {
 	background: url(../images/7.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+
+.banner-top8 {
+	background: url(../images/cow.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1215,21 +1225,6 @@ form.newsletter {
 }
 /*-- //contact --*/  
 
-/*-- coming sooon page --*/
-.comingsoon {
-    background: url(../images/comingsoon.jpg) no-repeat center;
-    background-size: cover;
-    min-height: 250px;
-    position: relative;
-}
-.comingsoon h4 {
-    font-size: 40px;
-    font-weight: 600;
-    letter-spacing: 2px;
-}
-.comingsoon p {
-    letter-spacing: 1px;
-}
 
 /*-- //coming sooon page --*/
 
@@ -1251,10 +1246,15 @@ button.move-top {
 /*-- //move top --*/
 
 /*-- card --*/
+.card-font{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 30px;
+    color: #444756;
+}
 .services>div:hover{
-    transform: scale(1.1);
-    color: red !important;
-    font-weight: bold !important;
+    transform: scale(1.08);
+    font-size: 40px;
+    font-weight: 900 !important;
  }
 
 /*-- Responsive design --*/
